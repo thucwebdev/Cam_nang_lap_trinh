@@ -371,15 +371,6 @@ body {
     padding-bottom: 10px;
 }
 
-.contact-section h2::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 60px;
-    height: 3px;
-    background-color: #b93838;
-    border-radius: 2px;
-}
 
 .contact-section > p {
     color: #666;
