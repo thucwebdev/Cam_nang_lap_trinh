@@ -5,58 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cẩm Nang Lập Trình</title>
     <link rel="stylesheet" href="styles.css">
-    <script>
-        // Chặn chuột phải
-        document.addEventListener('contextmenu', function(e) {
-            e.preventDefault();
-            return false;
-        });
-
-        // Chặn F12 và các phím tắt Developer Tools
-        document.addEventListener('keydown', function(e) {
-            // F12
-            if (e.key === 'F12') {
-                e.preventDefault();
-                return false;
-            }
-            // Ctrl+Shift+I (Inspect)
-            if (e.ctrlKey && e.shiftKey && e.key === 'I') {
-                e.preventDefault();
-                return false;
-            }
-            // Ctrl+Shift+C (Inspect Element)
-            if (e.ctrlKey && e.shiftKey && e.key === 'C') {
-                e.preventDefault();
-                return false;
-            }
-            // Ctrl+Shift+J (Console)
-            if (e.ctrlKey && e.shiftKey && e.key === 'J') {
-                e.preventDefault();
-                return false;
-            }
-            // Ctrl+U (View Source)
-            if (e.ctrlKey && e.key === 'u') {
-                e.preventDefault();
-                return false;
-            }
-        });
-
-        // Chặn inspect element khi nhấn Ctrl+Shift+C
-        document.addEventListener('selectstart', function(e) {
-            if (e.ctrlKey) {
-                e.preventDefault();
-                return false;
-            }
-        });
-    </script>
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="header-nav">
             <a href="#gioithieu">🧑‍💻 Giới thiệu</a>
-            <a href="#NGLT">📚 Ngôn ngữ lập trình</a>
-            <a href="#lotrinh">💼 Lộ trình học</a>
+            <a href="#lotrinh">📚 Lộ trình học</a>
             <a href="#tuvan">📝 Đăng ký tư vấn</a>
             <a href="#lienhe">📞 Liên hệ</a>
         </div>
@@ -78,37 +33,7 @@
             <p>Không cần bằng cấp cao hay kinh nghiệm trước đó, bạn hoàn toàn có thể bắt đầu từ con số 0 và trở thành lập trình viên chuyên nghiệp chỉ trong 6-12 tháng. Với lộ trình học rõ ràng từ HTML/CSS cơ bản đến Full-Stack Developer, cùng sự hỗ trợ tận tình từ đội ngũ giảng viên có kinh nghiệm thực tế, bạn sẽ nhanh chóng chinh phục ước mơ làm IT.</p>
             <p class="highlight">✅ Học thực hành 100% - Lộ trình rõ ràng - Cam kết đầu ra</p>
         </div>
-
-        <!-- Bảng ngôn ngữ lập trình phổ biến -->
-        <div id="NGLT" class="table-section">
-            <h2>Ngôn ngữ lập trình phổ biến năm 2026</h2>
-            <table class="customer-table">
-                <thead>
-                    <tr>
-                        <th>Ngôn ngữ</th>
-                        <th>Mô tả & Ứng dụng</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Python</strong></td>
-                        <td>Ngôn ngữ dễ học nhất cho người mới bắt đầu. Ứng dụng trong AI, Machine Learning, Data Science, Web Development. Mức lương trung bình: 15-40 triệu/tháng.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>JavaScript</strong></td>
-                        <td>Ngôn ngữ phổ biến nhất cho Web Development. Xây dựng website động, ứng dụng web, mobile app với React Native. Mức lương: 12-35 triệu/tháng.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Java</strong></td>
-                        <td>Ngôn ngữ mạnh mẽ cho ứng dụng doanh nghiệp, Android app. Được nhiều công ty lớn sử dụng. Mức lương: 15-45 triệu/tháng.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>C#</strong></td>
-                        <td>Ngôn ngữ của Microsoft, phát triển game Unity, ứng dụng Windows, web ASP.NET. Mức lương: 12-38 triệu/tháng.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+     
 
          <!-- Lộ trình học -->
         <div id="lotrinh" class="table-section">
@@ -212,7 +137,7 @@
     <!-- Footer -->
     <footer class="footer">
         <p>© 2026 Cẩm Nang Lập Trình - Nơi khởi đầu sự nghiệp IT của bạn</p>
-        <p>Học thực chiến | Có việc làm | Hỗ trợ trọn đời</p>
+        <p>Học thực chiến | Có việc làm | Hỗ trợ trọn đời </p>
     </footer>
 </body>
 </html>
